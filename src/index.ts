@@ -36,7 +36,7 @@ const ListDirectoryArgsSchema = z.object({
 
 // Server configuration
 const SERVER_CONFIG = {
-  name: "basic-mcp-server",
+  name: "fe-mcp",
   version: "1.0.0",
   description: "A basic MCP server with file operations and system information",
   author: "MCP Developer",

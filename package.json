@@ -1,5 +1,5 @@
 {
-  "name": "basic-mcp-server",
+  "name": "fe-mcp",
   "version": "1.0.0",
   "description": "A basic Model Context Protocol (MCP) server implementation in TypeScript",
   "main": "dist/index.js",
