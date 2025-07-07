@@ -21,17 +21,47 @@ The server follows the MCP specification and provides:
 
 ## Installation
 
+### Global Installation (Recommended)
+
 ```bash
+npm install -g fe-mcp
+```
+
+### Local Installation
+
+```bash
+npm install fe-mcp
+```
+
+### Development Installation
+
+```bash
+git clone https://github.com/yourusername/fe-mcp.git
+cd fe-mcp
 npm install
 ```
 
-## Development
+## Usage
+
+### As a Global Package
+
+```bash
+fe-mcp
+```
+
+### As a Local Package
+
+```bash
+npx fe-mcp
+```
+
+### Development Mode
 
 ```bash
 npm run dev
 ```
 
-## Build & Run
+### Build & Run
 
 ```bash
 npm run build
@@ -42,13 +72,26 @@ npm start
 
 Configure in your MCP client (e.g., Claude Desktop) by adding to the configuration file:
 
+### Global Installation
+
 ```json
 {
   "mcpServers": {
-    "basic-server": {
-      "command": "node",
-      "args": ["/path/to/dist/index.js"],
-      "cwd": "/path/to/server/directory"
+    "fe-mcp": {
+      "command": "fe-mcp"
+    }
+  }
+}
+```
+
+### Local Installation
+
+```json
+{
+  "mcpServers": {
+    "fe-mcp": {
+      "command": "npx",
+      "args": ["fe-mcp"]
     }
   }
 }
